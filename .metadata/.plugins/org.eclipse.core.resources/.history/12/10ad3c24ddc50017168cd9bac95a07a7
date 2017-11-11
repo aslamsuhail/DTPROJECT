@@ -1,0 +1,5 @@
+package com.niit.Ecom_backend.Impl;
+
+public class ProductDAOImpl {
+
+}

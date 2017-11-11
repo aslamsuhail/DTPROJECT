@@ -1,0 +1,45 @@
+package com.niit.Ecom_backend.Impl;
+
+import java.util.List;
+
+import com.niit.Ecom_backend.DAO.ProductDAO;
+import com.niit.Ecom_backend.Model.ProductModel;
+
+@Repository
+public class ProductDAOimpl implements ProductDAO
+{
+
+	@Autowired
+	private SessionFactory  sessionFactory;
+	
+	public void SessionFactory(SessionFactory sf)
+	{
+		this.SessionFactory = sf;
+		
+	}
+	
+
+
+	public List<ProductModel> getAll()
+	{
+		session s=SessionFactory.openSession();
+		s.beginTransaction();
+		Query query =s.createQuery("from ProductModel");        
+		List<ProductModel> list=query.list();
+		System.out.println(list);
+		s.getTransaction().commit();
+		return list;
+	}
+	public ProductModel findById(int id) {
+		return (ProductModel)sessionFactory.openSession().get(ProductModel.class,id);
+	}
+	public void delete(ProductModel p) {
+		Session s=SessionFactory.openSession();
+		s.beginTransaction();
+		s.delete(p);
+		s.getTransaction().commit();
+		s.close();sessionFactory.openSession().delete(p);
+		
+	}
+}
+

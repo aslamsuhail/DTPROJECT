@@ -1,0 +1,7 @@
+package com.niit.Ecom_backend.Model;
+
+public interface ProductModel 
+{
+	
+
+}
