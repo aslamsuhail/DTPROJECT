@@ -1,0 +1,38 @@
+package com.niit.controller;
+
+
+
+
+@Controller
+
+public class homecontroller 
+{
+
+   		
+	
+	@Autowired
+	private CategoryDAO categoryDAO;
+	 	
+@RequestMapping(value="/")
+public ModelAndView indexpage()
+{
+	  List<CategoryModel> clist=categoryDAO.getAll();
+       ModelAndView mt=new ModelAndView("index");
+   	 mt.addObject("list",clist);
+   	
+	return mt;
+}
+@RequestMapping(value="/login")
+public ModelAndView signin()
+{
+	ModelAndView lg=new ModelAndView("signin");
+	return lg;
+}
+@RequestMapping(value="/reg")
+public ModelAndView signup()
+{
+ ModelAndView sp=new ModelAndView("signup");
+ return sp;
+}
+}
+

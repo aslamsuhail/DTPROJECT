@@ -1,16 +1,32 @@
 package com.niit.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller  
-public class homecontroller
+import com.niit.Ecom_backend.DAO.CategoryDAO;
+import com.niit.Ecom_backend.Model.CategoryModel;
+
+@Controller
+
+public class homecontroller 
 {
+	
+   		
+	
+	@Autowired
+	private CategoryDAO categoryDAO;
+	 	
 @RequestMapping(value="/")
 public ModelAndView indexpage()
 {
-	ModelAndView mt=new ModelAndView("index");
+	  List<CategoryModel> clist=categoryDAO.getAll();
+       ModelAndView mt=new ModelAndView("index");
+   	 mt.addObject("list",clist);
+   	
 	return mt;
 }
 @RequestMapping(value="/login")
@@ -25,4 +41,7 @@ public ModelAndView signup()
  ModelAndView sp=new ModelAndView("signup");
  return sp;
 }
+
+
 }
+
