@@ -18,7 +18,7 @@ public class Productlist
 {
 	@Autowired
 	 ProductDAO product;
-	@RequestMapping(value ="/all/productlistview")
+	@RequestMapping(value ="/admin/productlistview")
 	  public ModelAndView getlist() 
 	   {
 			ModelAndView mv=new ModelAndView("productlistview");

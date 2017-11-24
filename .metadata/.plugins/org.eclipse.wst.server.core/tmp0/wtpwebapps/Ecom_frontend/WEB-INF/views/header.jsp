@@ -33,7 +33,7 @@
       </li>
       <li><a href="<c:url value="admin/add"/>" role="button" aria-haspopup="true"
 					aria-expanded="false">Add</a></li>
-      <li><a href="all/productlistview">Products</a></li>
+      <li><a href="admin/productlistview">Products</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="reg"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>

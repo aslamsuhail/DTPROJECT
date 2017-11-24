@@ -65,7 +65,11 @@ public class ProductDAOimpl implements ProductDAO
 
 
 	public void update(ProductModel product) {
-		// TODO Auto-generated method stub
+		Session s=sessionFactory.openSession();
+		s.beginTransaction();
+		s.update(product);
+		s.getTransaction().commit();
+		s.close();
 		
 	}
 }
