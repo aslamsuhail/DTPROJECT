@@ -31,9 +31,6 @@ public class homecontroller
 	private CategoryDAO categoryDAO;
 	@Autowired
 	ProductDAO products;
-	@Autowired
-	private ProductDAO productDAO;
-	
 	 	
 @RequestMapping(value="/")
 public ModelAndView indexpage()
@@ -112,17 +109,6 @@ return mv;
   	return mv;
      
   }	
-  @RequestMapping(value="/admin/product_delete")
-  public ModelAndView deleteProduct(HttpServletRequest request){
-  	
-  	ProductModel p=productDAO.findById(Integer.valueOf(request.getParameter("id")));
-  	System.out.print(p);
-      productDAO.delete(p);
-      List<ProductModel> list=productDAO.getAll();
-      ModelAndView mv = new ModelAndView("Adding");	
-      mv.addObject("slist",list);
-     return mv;
-  }
 
 }
 

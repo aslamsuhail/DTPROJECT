@@ -120,7 +120,7 @@ return mv;
       productDAO.delete(p);
       List<ProductModel> list=productDAO.getAll();
       ModelAndView mv = new ModelAndView("Adding");	
-      mv.addObject("slist",list);
+      mv.addObject("list",list);
      return mv;
   }
 

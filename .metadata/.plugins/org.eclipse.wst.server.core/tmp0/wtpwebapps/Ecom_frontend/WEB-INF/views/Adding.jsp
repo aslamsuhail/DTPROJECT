@@ -25,7 +25,7 @@
     background-color: #1a0000;
   }
   body {
-  background-color:#fff;
+  background-color: #ddd;
   -webkit-font-smoothing: antialiased;
   font: normal 14px Roboto,arial,sans-serif;
 }
@@ -35,23 +35,23 @@
 }
 .form-login {
     background-color: #EDEDED;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
     border-color:#d2d2d2;
-    border-width: 5px;
+    border-width: 8px;
     box-shadow:0 1px 0 #cfcfcf;
 }
 h4 { 
  border:0 solid #fff; 
- border-bottom-width:1px;
- padding-bottom:10px;
+ border-bottom-width:3px;
+ padding-bottom:25px;
  text-align: center;
 }
 .form-control {
-    border-radius: 10px;
+    border-radius: 50px;
 }
 .wrapper {
     text-align: center;
@@ -71,10 +71,10 @@ h4 {
 <a href="productlistview" style="font-family: fantasy;">PRODUCTLIST</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <div class="container">
     <div class="row">
-        <div class="col-md-offset-5 col-md-3">
+        <div class="col-md-offset-3 col-md-5">
             <div class="form-login">
             <form action="addProduct" method="post" enctype="multipart/form-data">
-            <h4 style="font-family: monospace;font-style: italic;"><b>ADD PRODUCT DETAILS</h4></b>
+            <h4><b>ADD PRODUCT DETAILS</h4></b>
             <input type="text" id="userName" class="form-control input-sm chat-input"  name="id" placeholder="EnterProductId"  required/>
             </br>
             <input type="text" id="productname" class="form-control input-sm chat-input"  name="pname"  placeholder="EnterProductName"  required/>
@@ -91,7 +91,7 @@ h4 {
           
            <input type="text" id="productprice" class="form-control input-sm chat-input" placeholder="Enter the product Price" name="price"/><br><br>
          
-          <input type="file" name="file" value="fileupload" id="fileupload"><label for="fileupload"> Select a file to upload</label> 
+          <input type="file" name="file" value="fileupload" id="fileupload"><label for="fileupload"> Select a file to upload</label><br><br> 
           <button type="submit"><label for="fileupload"></label>
          
             <div class="wrapper">

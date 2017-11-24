@@ -71,7 +71,7 @@ h4 {
 <a href="productlistview" style="font-family: fantasy;">PRODUCTLIST</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <div class="container">
     <div class="row">
-        <div class="col-md-offset-3 col-md-5">
+        <div class="col-md-offset-5 col-md-3">
             <div class="form-login">
             <form action="addProduct" method="post" enctype="multipart/form-data">
             <h4><b>ADD PRODUCT DETAILS</h4></b>
@@ -91,7 +91,7 @@ h4 {
           
            <input type="text" id="productprice" class="form-control input-sm chat-input" placeholder="Enter the product Price" name="price"/><br><br>
          
-          <input type="file" name="file" value="fileupload" id="fileupload"><label for="fileupload"> Select a file to upload</label><br><br> 
+          <input type="file" name="file" value="fileupload" id="fileupload"><label for="fileupload"> Select a file to upload</label> 
           <button type="submit"><label for="fileupload"></label>
          
             <div class="wrapper">

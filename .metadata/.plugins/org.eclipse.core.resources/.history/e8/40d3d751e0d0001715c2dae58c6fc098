@@ -115,12 +115,12 @@ return mv;
   @RequestMapping(value="/admin/product_delete")
   public ModelAndView deleteProduct(HttpServletRequest request){
   	
-  	ProductModel p=productDAO.findById(Integer.valueOf(request.getParameter("id")));
+  	ProductModel p=products.findById(Integer.valueOf(request.getParameter("id")));
   	System.out.print(p);
-      productDAO.delete(p);
-      List<ProductModel> list=productDAO.getAll();
+      products.delete(p);
+      List<ProductModel> list=products.getAll();
       ModelAndView mv = new ModelAndView("Adding");	
-      mv.addObject("slist",list);
+      mv.addObject("list",list);
      return mv;
   }
 
