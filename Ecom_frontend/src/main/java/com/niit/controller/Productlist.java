@@ -26,16 +26,5 @@ public class Productlist
 			mv.addObject("slist",slist);
 		    return mv;
 	   }
-		   /* @RequestMapping(value="/admin/product_delete")
-			public ModelAndView deleteProduct(HttpServletRequest request){
-				
-				ProductModel p=product.findById(Integer.valueOf(request.getParameter("id")));
-				System.out.print(p);
-			    product.delete(p);
-			    List<ProductModel> list=product.getAll();
-			    ModelAndView mv = new ModelAndView("productlistview");	
-			    mv.addObject("list",list);
-			   return mv;
-
-	   }*/
+		 
 }

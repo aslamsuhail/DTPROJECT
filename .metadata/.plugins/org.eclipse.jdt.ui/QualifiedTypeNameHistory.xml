@@ -13,14 +13,19 @@
 <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
 <fullyQualifiedTypeName name="com.niit.Ecom_backend.Model.CategoryModel"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="com.niit.Ecom_backend.Model.ProductModel"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="com.niit.Ecom_backend.DAO.ProductDAO"/>
 <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="com.niit.Ecom_backend.DAO.ProductDAO"/>
+<fullyQualifiedTypeName name="com.niit.Ecom_backend.Model.UserModel"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.niit.Ecom_backend.DAO.UserDAO"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 </qualifiedTypeNameHistroy>

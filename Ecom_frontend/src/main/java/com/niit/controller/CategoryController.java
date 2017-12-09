@@ -30,14 +30,13 @@ public class CategoryController
 	ProductDAO product2;
 	
 	
-	@RequestMapping(value ="/admin/add")
+	@RequestMapping(value ="admin/add")
 	    public ModelAndView add() 
 	{
 		List<CategoryModel> list=categorys.getAll();
-		//List<SupplierModel> slist=suppliers.getSave();
+		
 		ModelAndView mv = new ModelAndView("Adding");
-		//System.out.println(list.get(0).getC_name());	
-		//mv.addObject("slist", slist);
+	
 		mv.addObject("clist", list);
 					return mv;
 			

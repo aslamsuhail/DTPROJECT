@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 
@@ -14,56 +15,81 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="./resources/css/loginpage.css" rel="stylesheet" type="text/css"/>
-<style type="text/css">
-  .backgroundclr
-  { 
-    background-color: #1a0000;
-  }
-</style>
+
+
 <body>
- <%-- <jsp:include page="header.jsp"></jsp:include> --%>
+ <jsp:include page="header.jsp"></jsp:include>
 <!-- AddProduct coding  started -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-offset-5 col-md-3"><br><br><br>
-            <div class="form-login">
-            <form action="product_update" method="post" enctype="multipart/form-data">
-            <h4 style="font-family: monospace;font-style: italic;"><b>ADD PRODUCT DETAILS</h4></b>
-            <input type="text" id="userName" class="form-control input-sm chat-input"  name="id"  value="${product.productid}" placeholder="EnterProductId"/>
-            </br>
-            <input type="text" id="userPassword" class="form-control input-sm chat-input"  name="pname" value="${product.productname}" placeholder="EnterProductName"/>
-            </br><br>
-            Product Category
-           <select name="cid">
+<form class="form-horizontal" action="product_update" method="post" enctype="multipart/form-data">
+<fieldset>
+
+<!-- Form Name -->
+<legend>EDIT PRODUCTS</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="product_id">PRODUCT ID</label>  
+  <div class="col-md-4">
+  <input id="product_id" value="${product.productid}"  name="id" placeholder="PRODUCT ID" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="product_name">PRODUCT NAME</label>  
+  <div class="col-md-4">
+  <input id="product_name" value="${product.productname}" name="pname" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="product_categorie">PRODUCT CATEGORY</label>
+  <div class="col-md-4">
+    <select id="product_categorie" name="cid" class="form-control">
+    
              <c:forEach var="sList" items="${slist}">
 
                 <option value="${sList.categoryid}">${sList.categoryname}</option>
                 </c:forEach>
-           
-           </select><br><br><br>
-           
-          
-           <input type="text" id="productprice" class="form-control input-sm chat-input" placeholder="Enter the product Price" name="price" value="${product.productprice}"/><br><br>
-         
-          <input type="file" name="file" value="fileupload" id="fileupload"><label for="fileupload"> Select a file to upload</label> 
-          <button type="submit"><label for="fileupload"></label>
-         
-            <div class="wrapper">
-            <span class="group-btn">  <br><br>   
-                <input type="submit" value="ADD" class="btn btn-primary btn-md"><i class="fa fa-sign-in"></i></a>
-                <input type="submit" value="BACK" class="btn btn-primary btn-md" onClick="display();"><i class="fa fa-sign-in"></i>
-            </span>
-            </div>
-            </div>
-        </form>
-        </div>
-    </div>
-    </div>
-   
-        </div>
-        
-        </div>
-    <jsp:include page="footer.jsp"></jsp:include>
+    </select>
+  </div>
 </div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="product_prices">PRODUCT PRICES</label>  
+  <div class="col-md-4">
+  <input id="available_quantity" value="${product.productprice}" name="price" placeholder="PRODUCTPRICES" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+ <!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="filebutton">main_image</label>
+  <div class="col-md-4">
+    <input id="filebutton" name="file" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+ 
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Update</button>
+  </div>
+  </div>
+
+</fieldset>
+</form>
+          
+  
+    <jsp:include page="footer.jsp"></jsp:include>
+
 </body>
 </html>

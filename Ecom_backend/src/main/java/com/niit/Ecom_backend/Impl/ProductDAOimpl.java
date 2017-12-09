@@ -72,4 +72,13 @@ public class ProductDAOimpl implements ProductDAO
 		s.close();
 		
 	}
+	public List<ProductModel> getFilterProducts(int categoryid)
+	{
+		Session s=sessionFactory.openSession();
+		
+		List<ProductModel> results =s.createQuery("from ProductModel where categoryid="+categoryid).list();
+		s.close();
+		// TODO Auto-generated method stub
+		return results;
+	}
 }
