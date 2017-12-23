@@ -44,6 +44,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\DTPROJECT\Ecom_backend\src\main\java\com\niit\Ecom_backend\AppConfig.java"/>
 			<item value="E:\DTPROJECT\Ecom_frontend\src\main\webapp\WEB-INF\views\registerpage.jsp"/>
 			<item value="E:\DTPROJECT\Ecom_frontend"/>
 			<item value="E:\DTPROJECT"/>

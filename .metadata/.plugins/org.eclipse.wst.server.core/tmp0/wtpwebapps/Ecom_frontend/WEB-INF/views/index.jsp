@@ -5,38 +5,39 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
+<br><br><br>
 <div class="row">
   <div class="col-md-4">
     <div class="thumbnail">
       <img src="./resources/images/img1.jpg"" alt="...">
       <div class="caption">
-        <h3>Yamaha</h3>
-        <p>...</p>
-        <p><a href="noAccessPage" class="btn btn-primary" role="button">AddCart</a> <a href="reg" class="btn btn-default" role="button">Buy</a></p>
+        <h3>NINJA</h3>
       </div>
     </div>
     
   </div>
   <div class="col-md-4">
     <div class="thumbnail">
-      <img src="./resources/images/Bike-Stunt-Man-on-Road-HD-Images.jpg" alt="...">
+      <img src="./resources/images/PULSER NO1.jpg" alt="...">
       <div class="caption">
-        <h3>Pulser</h3>
-        <p>...</p>
-        <p><a href="noAccessPage" class="btn btn-primary" role="button">AddCart</a> <a href="reg" class="btn btn-default" role="button">Buy</a></p>
+        <h3>PULSER</h3>
+       
       </div>
     </div>
 </div>
 <div class="col-md-4">
     <div class="thumbnail">
-      <img src="./resources/images/Honda.jpg"" alt="...">
+      <img src="./resources/images/hondamotogppedrosa12.jpg"" alt="...">
       <div class="caption">
         <h3>Honda</h3>
-        <p>...</p>
-        <p><a href="noAccessPage" class="btn btn-primary" role="button">AddCart</a> <a href="reg" class="btn btn-default" role="button">Buy</a></p>
+        
       </div>
     </div>
     </div>

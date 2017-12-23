@@ -84,6 +84,8 @@ $(document).ready(function(){
 					aria-expanded="false" style="font-size:20px;color:white">ManageProducts</a>
 								
 					</li>
+					<li style="font-family:Times New Roman"><a href="<c:url value="/admin/add1"/>" role="button" aria-haspopup="true"
+					aria-expanded="false" style="font-size:20px;color:white">ManageCategory</a>
 					<!-- <li><a href="<c:url value="admin/productlistview"/>" style="font-family: fantasy;">PRODUCTLIST</a>-->
 			</ul>
 		

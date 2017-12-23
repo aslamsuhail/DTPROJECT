@@ -28,4 +28,8 @@
 <fullyQualifiedTypeName name="com.niit.Ecom_backend.DAO.UserDAO"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="com.niit.Ecom_backend.DAO.CartDAO"/>
+<fullyQualifiedTypeName name="com.niit.Ecom_backend.DAO.ShipDAO"/>
+<fullyQualifiedTypeName name="com.niit.Ecom_backend.Model.CartModel"/>
+<fullyQualifiedTypeName name="com.niit.Ecom_backend.Model.ShipModel"/>
 </qualifiedTypeNameHistroy>
